@@ -1,0 +1,28 @@
+Ultimate Organizer
+==================
+
+Quick Start
+-----------
+
+1. Drag UltimateOrganizer.app into Applications.
+2. Launch Ultimate Organizer.
+3. Choose the Chrome profile in Settings if the default profile is not the one you want.
+4. Use Import to load a Chrome Bookmarks file manually, or let the app load the detected profile.
+5. Use Review to inspect bookmark names, URLs, duplicates, and the preview panel.
+6. Use Process only after Ollama or LM Studio is running and serving your configured model.
+7. Use Export to save a JSON review copy before applying any changes.
+
+Safety Notes
+------------
+
+- Close Chrome before writing bookmark changes back to Chrome's Bookmarks file.
+- The app keeps imported changes in a working set until you export or apply them.
+- The URL column opens pages in your browser. Title columns are not browser links.
+
+Local AI
+--------
+
+Default endpoint: http://localhost:11434
+Default model: llama3.1
+
+You can change these values in Settings.

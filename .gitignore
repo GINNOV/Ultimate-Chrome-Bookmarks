@@ -1,0 +1,6 @@
+.build/
+dist/
+.DS_Store
+sparkle-private-key.txt
+xcuserdata/
+*.xcuserstate

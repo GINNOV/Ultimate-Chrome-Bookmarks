@@ -1,0 +1,65 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test
+        run: swift test
+
+      - name: Build DMG
+        env:
+          CURRENT_PROJECT_VERSION: ${{ github.run_number }}
+          SPARKLE_PUBLIC_ED_KEY: ${{ secrets.SPARKLE_PUBLIC_ED_KEY }}
+        run: |
+          test -n "$SPARKLE_PUBLIC_ED_KEY"
+          dmg_path="$(./script/package_dmg.sh | tail -n 1)"
+          mkdir -p public
+          cp "$dmg_path" public/
+
+      - name: Build Sparkle appcast tool
+        run: |
+          xcodebuild \
+            -project .build/checkouts/Sparkle/Sparkle.xcodeproj \
+            -scheme generate_appcast \
+            -configuration Release \
+            -derivedDataPath .build/sparkle-tools \
+            build
+
+      - name: Generate Sparkle appcast
+        env:
+          SPARKLE_PRIVATE_KEY: ${{ secrets.SPARKLE_PRIVATE_KEY }}
+        run: |
+          test -n "$SPARKLE_PRIVATE_KEY"
+          printf '%s\n' "$SPARKLE_PRIVATE_KEY" | \
+            .build/sparkle-tools/Build/Products/Release/generate_appcast \
+              --ed-key-file - \
+              --download-url-prefix "https://ginnov.github.io/Ultimate-Chrome-Bookmarks/" \
+              --link "https://github.com/GINNOV/Ultimate-Chrome-Bookmarks" \
+              public
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4

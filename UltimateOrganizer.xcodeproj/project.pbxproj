@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000001 /* UltimateOrganizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000101 /* UltimateOrganizerApp.swift */; };
+		100000000000000000000002 /* BookmarkLibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000102 /* BookmarkLibraryStore.swift */; };
+		100000000000000000000003 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000103 /* Notifications.swift */; };
+		100000000000000000000004 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000104 /* AboutView.swift */; };
+		100000000000000000000005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000105 /* ContentView.swift */; };
+		100000000000000000000006 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000106 /* DetailView.swift */; };
+		100000000000000000000007 /* OnboardingWizardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000107 /* OnboardingWizardView.swift */; };
+		100000000000000000000008 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000108 /* SettingsView.swift */; };
+		100000000000000000000009 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000109 /* SidebarView.swift */; };
+		10000000000000000000000A /* BookmarkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010A /* BookmarkModels.swift */; };
+		10000000000000000000000B /* ChromeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010B /* ChromeProfile.swift */; };
+		10000000000000000000000C /* ChromeBookmarkLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010C /* ChromeBookmarkLocator.swift */; };
+		10000000000000000000000D /* ChromeBookmarksParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010D /* ChromeBookmarksParser.swift */; };
+		10000000000000000000000E /* ChromeProcessDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010E /* ChromeProcessDetector.swift */; };
+		10000000000000000000000F /* ChromeProfileLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010F /* ChromeProfileLocator.swift */; };
+		100000000000000000000010 /* DuplicateBookmarkMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000110 /* DuplicateBookmarkMerger.swift */; };
+		100000000000000000000011 /* OllamaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000111 /* OllamaClient.swift */; };
+		100000000000000000000012 /* StagingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000112 /* StagingModels.swift */; };
+		100000000000000000000013 /* UltimateOrganizerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100000000000000000000202 /* UltimateOrganizerCore.framework */; };
+		100000000000000000000014 /* ChromeBookmarksWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000113 /* ChromeBookmarksWriter.swift */; };
+		100000000000000000000015 /* DeletionConfirmationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000114 /* DeletionConfirmationPolicy.swift */; };
+		100000000000000000000016 /* AutoUpdateConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000116 /* AutoUpdateConfiguration.swift */; };
+		100000000000000000000017 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 100000000000000000000A02 /* Sparkle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		100000000000000000000301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100000000000000000000500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100000000000000000000402;
+			remoteInfo = UltimateOrganizerCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000101 /* UltimateOrganizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateOrganizerApp.swift; sourceTree = "<group>"; };
+		100000000000000000000102 /* BookmarkLibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkLibraryStore.swift; sourceTree = "<group>"; };
+		100000000000000000000103 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		100000000000000000000104 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		100000000000000000000105 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		100000000000000000000106 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		100000000000000000000107 /* OnboardingWizardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWizardView.swift; sourceTree = "<group>"; };
+		100000000000000000000108 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		100000000000000000000109 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		10000000000000000000010A /* BookmarkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkModels.swift; sourceTree = "<group>"; };
+		10000000000000000000010B /* ChromeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeProfile.swift; sourceTree = "<group>"; };
+		10000000000000000000010C /* ChromeBookmarkLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeBookmarkLocator.swift; sourceTree = "<group>"; };
+		10000000000000000000010D /* ChromeBookmarksParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeBookmarksParser.swift; sourceTree = "<group>"; };
+		10000000000000000000010E /* ChromeProcessDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeProcessDetector.swift; sourceTree = "<group>"; };
+		10000000000000000000010F /* ChromeProfileLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeProfileLocator.swift; sourceTree = "<group>"; };
+		100000000000000000000110 /* DuplicateBookmarkMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateBookmarkMerger.swift; sourceTree = "<group>"; };
+		100000000000000000000111 /* OllamaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaClient.swift; sourceTree = "<group>"; };
+		100000000000000000000112 /* StagingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagingModels.swift; sourceTree = "<group>"; };
+		100000000000000000000113 /* ChromeBookmarksWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeBookmarksWriter.swift; sourceTree = "<group>"; };
+		100000000000000000000114 /* DeletionConfirmationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletionConfirmationPolicy.swift; sourceTree = "<group>"; };
+		100000000000000000000115 /* UltimateOrganizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UltimateOrganizer-Info.plist"; sourceTree = "<group>"; };
+		100000000000000000000116 /* AutoUpdateConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoUpdateConfiguration.swift; sourceTree = "<group>"; };
+		100000000000000000000201 /* UltimateOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000202 /* UltimateOrganizerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UltimateOrganizerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100000000000000000000601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000013 /* UltimateOrganizerCore.framework in Frameworks */,
+				100000000000000000000017 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000700 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000701 /* Sources */,
+				100000000000000000000702 /* Products */,
+				100000000000000000000115 /* UltimateOrganizer-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000701 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000710 /* UltimateOrganizer */,
+				100000000000000000000720 /* UltimateOrganizerCore */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		100000000000000000000702 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000201 /* UltimateOrganizer.app */,
+				100000000000000000000202 /* UltimateOrganizerCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100000000000000000000710 /* UltimateOrganizer */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000711 /* App */,
+				100000000000000000000712 /* Stores */,
+				100000000000000000000713 /* Support */,
+				100000000000000000000714 /* Views */,
+			);
+			path = UltimateOrganizer;
+			sourceTree = "<group>";
+		};
+		100000000000000000000711 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000101 /* UltimateOrganizerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		100000000000000000000712 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000102 /* BookmarkLibraryStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		100000000000000000000713 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000116 /* AutoUpdateConfiguration.swift */,
+				100000000000000000000103 /* Notifications.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		100000000000000000000714 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000104 /* AboutView.swift */,
+				100000000000000000000105 /* ContentView.swift */,
+				100000000000000000000106 /* DetailView.swift */,
+				100000000000000000000107 /* OnboardingWizardView.swift */,
+				100000000000000000000108 /* SettingsView.swift */,
+				100000000000000000000109 /* SidebarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		100000000000000000000720 /* UltimateOrganizerCore */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000721 /* Models */,
+				100000000000000000000722 /* Services */,
+				100000000000000000000723 /* Stores */,
+			);
+			path = UltimateOrganizerCore;
+			sourceTree = "<group>";
+		};
+		100000000000000000000721 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000010A /* BookmarkModels.swift */,
+				10000000000000000000010B /* ChromeProfile.swift */,
+				100000000000000000000114 /* DeletionConfirmationPolicy.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		100000000000000000000722 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000010C /* ChromeBookmarkLocator.swift */,
+				10000000000000000000010D /* ChromeBookmarksParser.swift */,
+				100000000000000000000113 /* ChromeBookmarksWriter.swift */,
+				10000000000000000000010E /* ChromeProcessDetector.swift */,
+				10000000000000000000010F /* ChromeProfileLocator.swift */,
+				100000000000000000000110 /* DuplicateBookmarkMerger.swift */,
+				100000000000000000000111 /* OllamaClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		100000000000000000000723 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000112 /* StagingModels.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000401 /* UltimateOrganizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000801 /* Build configuration list for PBXNativeTarget "UltimateOrganizer" */;
+			buildPhases = (
+				100000000000000000000901 /* Sources */,
+				100000000000000000000601 /* Frameworks */,
+				100000000000000000000902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				100000000000000000000302 /* PBXTargetDependency */,
+			);
+			name = UltimateOrganizer;
+			packageProductDependencies = (
+				100000000000000000000A02 /* Sparkle */,
+			);
+			productName = UltimateOrganizer;
+			productReference = 100000000000000000000201 /* UltimateOrganizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		100000000000000000000402 /* UltimateOrganizerCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000802 /* Build configuration list for PBXNativeTarget "UltimateOrganizerCore" */;
+			buildPhases = (
+				100000000000000000000903 /* Sources */,
+				100000000000000000000602 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UltimateOrganizerCore;
+			productName = UltimateOrganizerCore;
+			productReference = 100000000000000000000202 /* UltimateOrganizerCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					100000000000000000000401 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					100000000000000000000402 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 100000000000000000000800 /* Build configuration list for PBXProject "UltimateOrganizer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 100000000000000000000700;
+			productRefGroup = 100000000000000000000702 /* Products */;
+			packageReferences = (
+				100000000000000000000A01 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000401 /* UltimateOrganizer */,
+				100000000000000000000402 /* UltimateOrganizerCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100000000000000000000902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000001 /* UltimateOrganizerApp.swift in Sources */,
+				100000000000000000000002 /* BookmarkLibraryStore.swift in Sources */,
+				100000000000000000000003 /* Notifications.swift in Sources */,
+				100000000000000000000016 /* AutoUpdateConfiguration.swift in Sources */,
+				100000000000000000000004 /* AboutView.swift in Sources */,
+				100000000000000000000005 /* ContentView.swift in Sources */,
+				100000000000000000000006 /* DetailView.swift in Sources */,
+				100000000000000000000007 /* OnboardingWizardView.swift in Sources */,
+				100000000000000000000008 /* SettingsView.swift in Sources */,
+				100000000000000000000009 /* SidebarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000000A /* BookmarkModels.swift in Sources */,
+				10000000000000000000000B /* ChromeProfile.swift in Sources */,
+				100000000000000000000015 /* DeletionConfirmationPolicy.swift in Sources */,
+				10000000000000000000000C /* ChromeBookmarkLocator.swift in Sources */,
+				10000000000000000000000D /* ChromeBookmarksParser.swift in Sources */,
+				100000000000000000000014 /* ChromeBookmarksWriter.swift in Sources */,
+				10000000000000000000000E /* ChromeProcessDetector.swift in Sources */,
+				10000000000000000000000F /* ChromeProfileLocator.swift in Sources */,
+				100000000000000000000010 /* DuplicateBookmarkMerger.swift in Sources */,
+				100000000000000000000011 /* OllamaClient.swift in Sources */,
+				100000000000000000000012 /* StagingModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		100000000000000000000302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100000000000000000000402 /* UltimateOrganizerCore */;
+			targetProxy = 100000000000000000000301 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		100000000000000000000811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "UltimateOrganizer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlethings.UltimateOrganizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		100000000000000000000812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "UltimateOrganizer-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlethings.UltimateOrganizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		100000000000000000000821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleShortVersionString = 0.1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlethings.UltimateOrganizerCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		100000000000000000000822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleShortVersionString = 0.1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlethings.UltimateOrganizerCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		100000000000000000000831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		100000000000000000000832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000800 /* Build configuration list for PBXProject "UltimateOrganizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000831 /* Debug */,
+				100000000000000000000832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000801 /* Build configuration list for PBXNativeTarget "UltimateOrganizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000811 /* Debug */,
+				100000000000000000000812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000802 /* Build configuration list for PBXNativeTarget "UltimateOrganizerCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000821 /* Debug */,
+				100000000000000000000822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		100000000000000000000A01 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		100000000000000000000A02 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 100000000000000000000A01 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 100000000000000000000500 /* Project object */;
+}
