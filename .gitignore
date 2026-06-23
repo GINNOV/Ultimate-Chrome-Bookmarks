@@ -4,3 +4,6 @@ dist/
 sparkle-private-key.txt
 xcuserdata/
 *.xcuserstate
+
+public/*.dmg
+public/appcast.xml
